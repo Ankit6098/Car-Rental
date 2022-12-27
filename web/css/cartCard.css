@@ -1,0 +1,228 @@
+
+.modelImage {
+    height: 210px;
+    width: 380px;
+    margin-left: 29px; 
+}
+
+.overlay {
+  width: 100%;
+  width: 1115px;
+  height: 860px;
+  
+  padding: 0rem 2rem;
+  margin-top: 175px;
+  
+  position: relative;
+    left: 50%;
+transform: translateX(-50%);
+
+  
+  
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.275);
+  box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    height: 348px;
+    width: 384px;
+    margin-top: -470px;
+    margin-left: 30px;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.180);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+.card_bill {
+    position: absolute;
+    height: 352px;
+    width: 384px;
+    margin-top: -90px;
+    margin-left: 30px;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.180);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.card_form {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    height: 352px;
+    width: 484px;
+    margin-top: -470px;
+    margin-left: 500px;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.180);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.15);
+    
+  
+}
+
+
+
+.overlay__inner {
+  max-width: 36rem;
+}
+
+.overlay__title {
+  font-size: 1.575rem;
+  line-height: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-top: -290px;
+}
+.overlay__payment {
+    font-size: 1.255rem;
+  line-height: 2.75rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-top: 10px;
+  margin-left: 10px;
+  
+}
+
+.overlay__name {
+    font-size: 1.475rem;
+  line-height: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+}
+
+.overlay__price {
+    position: absolute;
+  font-size: 1rem;
+  line-height: 2.75rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-left: 305px;
+  margin-top: -47px;
+}
+
+
+
+.overlay__btn {
+  width: 70%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.975rem;
+  font-weight: 600;
+  color: white;
+  background: #EB0028;
+  border: none;
+  border-radius: 0.5rem;
+  transition: transform 150ms ease;
+  outline-color: hsl(var(--hue), 95%, 50%);
+  margin-top: 160px;
+  margin-left: 540px;
+  z-index: 1;
+
+}
+
+.overlay__btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.overlay__btn-emoji {
+  margin-left: 0.375rem;
+}
+.logoDrive img,
+.logoSeat img,
+.logoMileage img {
+  background: rgba(255, 255, 255, 0);
+
+  box-shadow: 0 0.15rem 1rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+}
+
+
+.logoDrive img {
+     position: absolute;
+ bottom: 475px;
+
+  margin-left: 55px;
+    width: 34px;
+    height: 32px;
+    opacity: 0.8;
+    color: #999999;
+
+}
+
+
+
+
+.logoSeat img {
+ position: absolute;
+ bottom: 475px;
+  margin-left: 195px;
+
+   width: 34px;
+    height: 32px;
+    opacity: 0.8;
+    color: #999999;
+
+}
+
+.logoMileage img {
+     position: absolute;
+bottom: 475px;
+ margin-left: 345px;
+ 
+     width: 34px;
+    height: 32px;
+    opacity: 0.8;
+}
+
+
+.drive {
+    font-size: 1rem;
+bottom: 450px;
+  margin-left: 55px;
+    color: #666666;
+    position: absolute;
+    font-weight: 600;
+    
+
+
+}
+
+.seats {
+    font-size: 1rem;
+bottom: 450px;
+  margin-left: 180px;
+    color: #666666;
+    position: absolute;
+    font-weight: 600;
+
+}
+
+.mileage {
+    font-size: 1rem;
+bottom: 450px;
+ margin-left: 330px;
+    color: #666666;
+    position: absolute;
+    font-weight: 600;
+
+}
+
+
+
+

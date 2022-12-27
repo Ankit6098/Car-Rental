@@ -1,0 +1,416 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 Sep, 2021, 8:00:22 PM
+    Author     : Sanam
+*/
+
+
+
+.modelImage {
+    height: 210px;
+    width: 380px;
+    margin-left: 29px;
+    margin-top: -20px;
+    
+   
+}
+.card {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    height: 308px;
+    width: 384px;
+    margin-top: -637px;
+    margin-left: 30px;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.680);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: -1;
+}
+.card_bill {
+
+    position: absolute;
+    height: 265px;
+    width: 384px;
+    margin-top: -315px;
+    margin-left: 30px;
+    border-radius: 35px;
+    background: rgba(24, 94, 224, 1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.card_form {
+    font-family: "Poppins", sans-serif;
+position: relative; 
+       height: 665px;
+    width: 484px;
+    margin-top: -634px;
+    margin-left: 890px;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.580);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+
+.overlay {
+  width: 100%;
+  max-width: 1140px;
+  max-height: 840px;
+  padding: 2rem 2rem;
+  margin-top: 120px;
+position: relative; 
+left: 50%;
+transform: translateX(-50%);
+  
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.575);
+  box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.overlay__inner {
+  max-width: 36rem;
+}
+
+.overlay__title {
+  font-size: 1.575rem;
+  line-height: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+.overlay__payment {
+    font-size: 1.255rem;
+  line-height: 2.75rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.overlay__name {
+    font-size: 1.475rem;
+  line-height: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+}
+
+.overlay__price {
+    position: absolute;
+  font-size: 1rem;
+  line-height: 2.75rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-left: 305px;
+  margin-top: -47px;
+}
+
+.overlay__description {
+  font-size: 1rem;
+  line-height: 1.45rem;
+ 
+  margin-left: 40px;
+  box-sizing: border-box;
+  width: 63%;
+  margin-top: 90px;
+  text-align: justify;
+  color: white;
+}
+
+.overlay__btn {
+  width: 60%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.975rem;
+  font-weight: 600;
+  color: white;
+  background: #EB0028;
+  border: none;
+  border-radius: 0.5rem;
+  transition: transform 150ms ease;
+  outline-color: hsl(var(--hue), 95%, 50%);
+  margin-top: 20px;
+  margin-left: -142px;
+
+}
+
+.overlay__btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.overlay__btn-emoji {
+  margin-left: 0.375rem;
+}
+.logoDrive img,
+.logoSeat img,
+.logoMileage img {
+  background: rgba(255, 255, 255, 0);
+
+  box-shadow: 0 0.15rem 1rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+}
+
+
+.logoDrive img {
+     position: absolute;
+ bottom: 392px;
+
+  margin-left: 60px;
+    width: 34px;
+    height: 32px;
+    opacity: 0.8;
+    color: #999999;
+
+}
+
+
+
+
+.logoSeat img {
+ position: absolute;
+ bottom: 392px;
+  margin-left: 195px;
+
+   width: 34px;
+    height: 32px;
+    opacity: 0.8;
+    color: #999999;
+
+}
+
+.logoMileage img {
+     position: absolute;
+bottom: 392px;
+ margin-left: 345px;
+ 
+     width: 34px;
+    height: 32px;
+    opacity: 0.8;
+}
+
+
+.drive {
+    font-size: 1rem;
+bottom: 370px;
+  margin-left: 50px;
+    color: #666666;
+    position: absolute;
+    font-weight: 600;
+    
+
+
+}
+
+.seats {
+    font-size: 1rem;
+bottom: 370px;
+  margin-left: 180px;
+    color: #666666;
+    position: absolute;
+    font-weight: 600;
+
+}
+
+.mileage {
+    font-size: 1rem;
+bottom: 370px;
+ margin-left: 330px;
+    color: #666666;
+    position: absolute;
+    font-weight: 600;
+
+}
+
+
+
+
+form {
+	display: flex;
+	align-items: center;
+	
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.container {
+
+	border-radius: 15px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+        
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+
+
+
+ .label {
+	 display: flex;
+	 cursor: pointer;
+	 font-weight: 500;
+	 position: relative;
+	 overflow: hidden;
+	 margin-bottom: 0.375em;
+	/* Accessible outline */
+	/* Remove comment to use */
+	/* &:focus-within {
+		 outline: .125em solid $primary-color;
+	}
+	 */
+}
+ .label .input {
+	 position: absolute;
+	 left: -9999px;
+}
+ .label .input:checked + span {
+	 background-color: #cddcf8;
+}
+ .label .input:checked + span:before {
+	 box-shadow: inset 0 0 0 0.4375em #185ee0;
+}
+ .label span {
+	 display: flex;
+	 align-items: center;
+	 padding: 0.375em 0.75em 0.375em 0.375em;
+	 border-radius: 99em;
+	 transition: 0.25s ease;
+}
+ .label span:hover {
+	 background-color: #cddcf8;
+}
+ .label span:before {
+	 display: flex;
+	 flex-shrink: 0;
+	 content: "";
+	 background-color: #fff;
+	 width: 1.5em;
+	 height: 1.5em;
+	 border-radius: 50%;
+	 margin-right: 0.375em;
+	 transition: 0.25s ease;
+	 box-shadow: inset 0 0 0 0.125em #185ee0;
+}
+
+
+ .tgl {
+	 display: none;
+}
+ .tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+	 box-sizing: border-box;
+}
+ .tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+	 background: none;
+}
+ .tgl + .tgl-btn {
+	 outline: 0;
+	 display: block;
+	 width: 2.5em;
+	 height: 1.5em;
+	 position: relative;
+	 cursor: pointer;
+	 user-select: none;
+}
+ .tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+	 position: relative;
+	 display: block;
+	 content: "";
+	 width: 50%;
+	 height: 100%;
+}
+ .tgl + .tgl-btn:after {
+	 left: 0;
+}
+ .tgl + .tgl-btn:before {
+	 display: none;
+}
+ .tgl:checked + .tgl-btn:after {
+	 left: 50%;
+}
+ .tgl-light + .tgl-btn {
+	 background: #f0f0f0;
+	 border-radius: 2em;
+	 padding: 2px;
+	 transition: all 0.4s ease;
+}
+ .tgl-light + .tgl-btn:after {
+	 border-radius: 50%;
+	 background: #fff;
+	 transition: all 0.2s ease;
+}
+ .tgl-light:checked + .tgl-btn {
+	 background: #9fd6ae;
+}
+ .tgl-ios + .tgl-btn {
+	 background: #fbfbfb;
+	 border-radius: 2em;
+	 padding: 2px;
+	 transition: all 0.4s ease;
+	 border: 1px solid #e8eae9;
+}
+ .tgl-ios + .tgl-btn:after {
+	 border-radius: 2em;
+	 background: #fbfbfb;
+	 transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+	 box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 4px 0 rgba(0, 0, 0, .08);
+}
+ .tgl-ios + .tgl-btn:hover:after {
+	 will-change: padding;
+}
+ .tgl-ios + .tgl-btn:active {
+	 box-shadow: inset 0 0 0 2em #e8eae9;
+}
+ .tgl-ios + .tgl-btn:active:after {
+	 padding-right: 0.8em;
+}
+ .tgl-ios:checked + .tgl-btn {
+	 background: #86d993;
+}
+ .tgl-ios:checked + .tgl-btn:active {
+	 box-shadow: none;
+}
+ .tgl-ios:checked + .tgl-btn:active:after {
+	 margin-left: -0.8em;
+}

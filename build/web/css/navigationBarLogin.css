@@ -1,0 +1,194 @@
+
+
+/* ========== header and navbar styling =========*/
+
+header {
+	width: 100%;
+	padding: 10px 40px;
+	border-bottom: 1px solid #E5E5E5;
+text-transform: none;
+	position: fixed;
+        font-family: Poppins;
+        font-size: 5rem;
+	top: 0;
+	transition: all 0.25s ease;
+	z-index: 3;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+
+
+nav {
+	padding: 15px 15px 0 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+        margin-right: 1rem;
+        font-size: 10px;
+}
+
+@media (max-width: 600px) {
+	nav ul {
+		margin: unset;
+		display: unset;
+		position: relative;
+		right: 30px;
+	}
+}
+
+nav li {
+	list-style-type: none;
+                font-family: Poppins;
+
+}
+
+nav li a {
+	margin: 0 15px;
+	padding: 10px 5px 15px 5px;
+	color: #333333;
+	letter-spacing: 0.05rem;
+	font-size: 1rem;
+        font-family: Poppins;
+}
+
+nav li a:hover {
+	color: #EB0028;
+	border-bottom: 2px solid #EB0028;
+}
+
+nav button {
+ /*remove default styling*/
+	/*outline: none;*/
+	border: none;
+	box-shadow: none;
+        width: 160px;
+	color: white;
+	
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+}
+
+
+
+nav button:hover {
+	cursor: pointer;
+}
+
+@keyframes buttonEffect {
+	0% {
+		width: 0px;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes buttonEffectRemoval {
+	0% {
+		width: 100%;
+	}
+	100% {
+		width: 0px;
+	}
+}
+
+@media (max-width: 1000px) {
+	nav li a {
+		padding-bottom: 0px;
+	}
+}
+
+
+
+
+
+
+.btn-7 {
+background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+	background: linear-gradient(to right, #FF4B2B, #FF416C);  line-height: 42px;
+  padding: 0;
+  border: none;
+
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  	font-size: 17px;
+
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(251,75,2,1);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover{
+  color: rgba(251,75,2,1);
+  background: transparent;
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgba(251,75,2,1);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+
+

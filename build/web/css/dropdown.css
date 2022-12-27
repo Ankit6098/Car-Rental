@@ -1,0 +1,123 @@
+
+
+:root {
+  --select-theme: #ffe3de;
+  --select-theme-hover: #d18375;
+  --option-color: #0d323b;
+}
+
+
+.container {
+  padding: 22px;
+}
+.container__title {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 6px;
+
+}
+
+.selectbox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 300px;
+}
+.option-container {
+  background-color: var(--select-theme);
+  color: var(--option-color);
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.selectbox--active .option-container {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.selectbox__displayWord,
+.option-container__option {
+  padding: 12px 42px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.selectbox__displayWord {
+  position: relative;
+  background-color: var(--select-theme);
+  color: var(--option-color);
+  border-radius: 8px;
+  height: 40px;
+}
+.selectbox__displayWord::after {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  content: "";
+  background: url("https://image.flaticon.com/icons/svg/271/271210.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  height: 16px;
+  width: 16px;
+  color: #f5f6fa;
+  transform: translateY(-50%);
+  transition: all 0.4s;
+}
+.selectbox--active .selectbox__displayWord::after {
+  transform: translateY(-50%) rotateZ(180deg);
+}
+.selectbox--unselect .selectbox__displayWord {
+  color: gray;
+}
+.selectbox--shake {
+  animation: shake 0.3s forwards;
+}
+.option-container {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+}
+.option-container__option:hover {
+  background-color: var(--select-theme-hover);
+}
+.option__radio {
+  display: none;
+}
+.option__label {
+  cursor: pointer;
+}
+
+
+
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
